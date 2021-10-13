@@ -1,0 +1,47 @@
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Playfair Display', serif;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3125rem;
+}
+
+.wrapper {
+    display: grid;
+}
+
+.split {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #CDCDCD;
+}
+
+.text-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.text-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-accent);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+
