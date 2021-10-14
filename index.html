@@ -11,32 +11,61 @@
 <body>
     <header class="wrapper">
       <div class="split text-left">
-        
-        <h1>
-          Odin's Recipes
-        </h1>
-        <p>
-          <image src="images/odin_eating.PNG"
-          width="1000"
-          height="750"/>
-        </p>
-        <h2>
-          Hangry Yet?
-        </h2>
-      </div>
+        <button id="myid">
+          <span class="default-text">
+              Odin's Eats
+          </span>
+          <span class="hover-text" style="display: none;">
+            <a href="recipes/about.html" style="text-decoration: none; color: black;">
+              About
+            </a>
+          </span>
+        </button>
 
-      <div class="split text-right">
-        <div>
-          <p><a href="recipes/tacos.html">Nico's Tacos</a></p>
-        </div>
-        <div>
-          <p><a href="recipes/TikTok.html">Tik Tok Pasta</a></p>
-        </div>
-        <div>
-          <p><a href="recipes/bolognaCake.html">Bologna Cake</a></p>
-        </div>
+        <script>
+          var button = document.getElementById('myid')
+          button.addEventListener('mouseover', function() {
+            this.querySelector('.hover-text').style.display="block";
+            this.querySelector('.default-text').style.display="none";
+          });
+          button.addEventListener('mouseleave', function() {
+            this.querySelector('.default-text').style.display="block";
+            this.querySelector('.hover-text').style.display="none";
+          });
+        </script>
+         
+         <div class="odin">
+          <p>
+            <image src="images/odin_eating.PNG"
+            width="1000"
+            height="750"/>
+          </p>
+         </div>
+        
+
+        <button id="btn">
+          <span class="default">
+            Got Recipes?
+          </span>
+          <span class="hover" style="display: none;">
+            <a href="recipes/recipe-home.html" style="text-decoration: none; color:black;">
+              Let's Eat
+            </a>
+          </span>
+        </button>
+
+        <script>
+          var button = document.getElementById('btn')
+          button.addEventListener('mouseover', function() {
+            this.querySelector('.hover').style.display="block";
+            this.querySelector('.default').style.display="none";
+          });
+          button.addEventListener('mouseleave', function() {
+            this.querySelector('.default').style.display="block";
+            this.querySelector('.hover').style.display="none";
+          });
+        </script>
       </div>
-    </header>
-      
+    </header>    
 </body>
 </html>
