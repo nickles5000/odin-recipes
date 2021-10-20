@@ -9,63 +9,60 @@
 </head>
 
 <body>
-    <header class="wrapper">
-      <div class="split text-left">
-        <button id="myid">
-          <span class="default-text">
-              Odin's Eats
-          </span>
-          <span class="hover-text" style="display: none;">
-            <a href="recipes/about.html" style="text-decoration: none; color: black;">
-              About
-            </a>
-          </span>
-        </button>
-
-        <script>
-          var button = document.getElementById('myid')
-          button.addEventListener('mouseover', function() {
-            this.querySelector('.hover-text').style.display="block";
-            this.querySelector('.default-text').style.display="none";
-          });
-          button.addEventListener('mouseleave', function() {
-            this.querySelector('.default-text').style.display="block";
-            this.querySelector('.hover-text').style.display="none";
-          });
-        </script>
-         
-         <div class="odin">
-          <p>
-            <image src="images/odin_eating.PNG"
-            width="1000"
-            height="750"/>
-          </p>
-         </div>
+  <div class="odin">
+    <div class="bg-image">
+      <div class="flex">
+        <div class="flex-item">
+          <button id="myId">
+            <span class="default-text">
+                Odin's Eats
+            </span>
+            <span class="hover-text" style="display: none;">
+              <a href="recipes/about.html" style="text-decoration: none; color: white;">
+                About
+              </a>
+            </span>
+          </button>
         
-
-        <button id="btn">
-          <span class="default">
-            Got Recipes?
-          </span>
-          <span class="hover" style="display: none;">
-            <a href="recipes/recipe-home.html" style="text-decoration: none; color:black;">
-              Let's Eat
-            </a>
-          </span>
-        </button>
-
-        <script>
-          var button = document.getElementById('btn')
-          button.addEventListener('mouseover', function() {
-            this.querySelector('.hover').style.display="block";
-            this.querySelector('.default').style.display="none";
-          });
-          button.addEventListener('mouseleave', function() {
-            this.querySelector('.default').style.display="block";
-            this.querySelector('.hover').style.display="none";
-          });
-        </script>
-      </div>
-    </header>    
+          <script>
+            var button = document.getElementById('myId')
+            button.addEventListener('mouseover', function() {
+              this.querySelector('.hover-text').style.display="block";
+              this.querySelector('.default-text').style.display="none";
+            });
+            button.addEventListener('mouseleave', function() {
+              this.querySelector('.default-text').style.display="block";
+              this.querySelector('.hover-text').style.display="none";
+            });
+          </script>
+        </div>
+          
+        <div class="flex-item">
+          <button id="btn">
+            <span class="default">
+              Got Recipes?
+            </span>
+            <span class="hover" style="display: none;">
+              <a href="recipes/recipe-home.html" style="text-decoration: none; color: white;">
+                Let's Eat
+              </a>
+            </span>
+          </button>
+    
+          <script>
+            var button = document.getElementById('btn')
+            button.addEventListener('mouseover', function() {
+              this.querySelector('.hover').style.display="block";
+              this.querySelector('.default').style.display="none";
+            });
+            button.addEventListener('mouseleave', function() {
+              this.querySelector('.default').style.display="block";
+              this.querySelector('.hover').style.display="none";
+            });
+          </script>
+       </div>
+     </div>
+    </div>  
+  </div>   
 </body>
 </html>

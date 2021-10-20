@@ -4,39 +4,50 @@
 }
 
 body {
-    background-color: #CDCDCD;
+    background-color: #181818;
 }
 
-.split {
-    background-color: #CDCDCD;
+.bg-image {
+  outline: 6px solid white;
+  background-size: 50% 50;
+  background-image: url("images/odin2.PNG");
+  padding: 12.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.text-left {
+.flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    justify-content: space-between;
 }
 
-#myid {
-    background-color: #CDCDCD;
+#myId {
+    margin-top: 20rem;
+    margin-left: -10rem;
+    background-color: #181818;
     font-family: var(--ff-accent);
     font-weight: 900;
     border: none;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 4rem;
+    font-size: 6rem;
+    color: silver;
+}
+
+.flex-item {
+    transition: 2s;
 }
 
 #btn {
-    background-color: #CDCDCD;
+    margin-top: 20rem;
+    margin-right: -10rem;
+    background-color: #181818;
     font-family: var(--ff-accent);
     font-weight: 900;
     border: none;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 4rem;
+    font-size: 6rem;
+    color: silver;
 }
 

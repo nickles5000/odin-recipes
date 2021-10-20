@@ -1,0 +1,103 @@
+
+body {
+    background-color: rgb(145, 145, 145);
+    font-family: Roboto, sans-serif;
+}
+
+img {
+    height: 800px;
+    width: auto;
+    align-items: center;
+    padding-left: 3rem;
+    border-radius: 15px;
+}
+
+.hi {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.container1 {
+    border-radius: 10%;
+    align-content: left;
+    float: left;
+    shape-outside: ellipse();
+}
+
+span {
+    padding-top: 1px;
+    display: inline-block;
+}
+
+.container2 {
+    text-align: left;
+    margin-left: -5rem;
+    padding-top: 1rem;
+    padding-right: 8rem;
+    padding-left: -2rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: -2rem;
+}
+
+p {
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+button{
+    border: none;
+    border-radius: 15px;
+  }
+  
+  button:hover{
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    } 
+  
+  .button-os{
+     position: absolute;
+      width: 175px;
+      height: 65px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: black;
+      color: white;
+      transition: background-color 2.2s;
+      transition-duration: 3s;
+      transition: 1.5s;
+    }
+    
+    .button-os:hover{
+      position: absolute;
+      top: 30px;
+      background-color: rgb(145, 145, 145);
+    }
+    
+    .button-os a{
+      font-size: 30px;
+      font-weight: 800;
+      display: block;
+      text-decoration: none;
+      color: white;
+      transition: 1.5s;
+    }
+    
+    .button-os a:hover{
+      letter-spacing: 5px;
+      color: black;
+    }
+
